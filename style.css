@@ -105,3 +105,37 @@ ul.contacts .value {
     font-size: 15px;
     font-weight: bold;
 }
+
+/* Halaman Paket Berlangganan */
+ol.packages {
+    max-width: 640px;
+    padding-left: 24px;
+}
+
+ol.packages > li {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+ol.packages > li:last-child {
+    border-bottom: none;
+}
+
+ol.packages h3 {
+    margin: 4px 0 6px 0;
+}
+
+ol.packages .harga {
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+ol.packages ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol.packages ul li {
+    margin-bottom: 4px;
+}
