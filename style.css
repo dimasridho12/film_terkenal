@@ -139,3 +139,57 @@ ol.packages ul {
 ol.packages ul li {
     margin-bottom: 4px;
 }
+
+
+
+/* Tabel (Daftar Film & Rekomendasi) */
+main table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 760px;
+    margin: 16px 0;
+}
+
+main table caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+main table th,
+main table td {
+    border: 1px solid #999;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+main table thead th {
+    background-color: #222;
+    color: white;
+}
+
+main table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+main table tfoot th,
+main table tfoot td {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+main table img {
+    display: block;
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+}
+
+main table a {
+    color: #0645ad;
+}
+
+section h4 {
+    margin: 20px 0 0 0;
+}

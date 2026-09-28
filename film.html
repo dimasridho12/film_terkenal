@@ -23,14 +23,86 @@
 
         <h2>Film-Film Pilihan</h2>
 
-        <section>
+        <p>
+            Klik poster atau judul film pada tabel di bawah untuk melihat
+            detail film beserta rekomendasi film yang serupa.
+        </p>
+
+        <table id="daftar">
+            <caption>Tabel Ringkasan Film Pilihan</caption>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Poster</th>
+                    <th>Judul</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th>Harga Tiket</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#pesta-copet"><img src="gambar/copet.jpg" alt="Pesta Copet" width="60" height="80"></a></td>
+                    <td><a href="#pesta-copet">Pesta Copet</a></td>
+                    <td>Komedi, Aksi</td>
+                    <td>&#9733; 7.5</td>
+                    <td>Rp 35.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#ghost-in-the-cell"><img src="gambar/Ghost in the Cell.jpeg" alt="Ghost In The Cell" width="60" height="80"></a></td>
+                    <td><a href="#ghost-in-the-cell">Ghost In The Cell</a></td>
+                    <td>Fiksi Ilmiah, Aksi</td>
+                    <td>&#9733; 8.0</td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#agak-laen"><img src="gambar/Agak Laen.jpeg" alt="Agak Laen" width="60" height="80"></a></td>
+                    <td><a href="#agak-laen">Agak Laen</a></td>
+                    <td>Komedi, Horor</td>
+                    <td>&#9733; 8.2</td>
+                    <td>Rp 35.000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#sampai-titik-terakhir"><img src="gambar/sampai_titik_terakhir.jpeg" alt="Sampai Titik Terakhir" width="60" height="80"></a></td>
+                    <td><a href="#sampai-titik-terakhir">Sampai Titik Terakhir</a></td>
+                    <td>Drama, Romantis</td>
+                    <td>&#9733; 7.8</td>
+                    <td>Rp 40.000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#mortal-kombat-2"><img src="gambar/mortal_Kombat_2.jpeg" alt="Mortal Kombat II" width="60" height="80"></a></td>
+                    <td><a href="#mortal-kombat-2">Mortal Kombat II</a></td>
+                    <td>Aksi, Fantasi</td>
+                    <td>&#9733; 7.0</td>
+                    <td>Rp 35.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2" rowspan="2">Ringkasan</th>
+                    <td colspan="3">Jumlah film</td>
+                    <td>5 film</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Rata-rata harga tiket</td>
+                    <td>Rp 35.000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <section id="pesta-copet">
             <h3>1. PESTA COPET</h3>
 
             <p>
                Pesta Copet adalah istilah yang sering digunakan secara 
                sarkastik atau bercanda untuk menggambarkan situasi
-               keramaian padat—seperti konser, pasar malam, terminal, 
-               atau transportasi umum saat jam sibuk—yang dianggap rawan 
+               keramaian padat seperti konser, pasar malam, terminal, 
+               atau transportasi umum saat jam sibuk yang dianggap rawan 
                aksi pencopetan karena banyaknya orang berdesakan dan 
                perhatian yang teralihkan.
             </p>
@@ -41,15 +113,47 @@
 
             <img src="gambar/copet.jpg" alt="Pesta Copet" width="200" height="270">
 
-            <P>
-            <video width="640" height="360" controls>
-            <source  src="video/pesta_copet.mp4" type="video/mp4">
-                Browser Anda tidak mendukung tag video.
-            </video>
-            </P>
+            <p>
+                <video width="640" height="360" controls>
+                    <source src="video/pesta_copet.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </p>
+
+            <h4>Rekomendasi Film Serupa</h4>
+            <table>
+                <caption>Film yang serupa dengan Pesta Copet</caption>
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Judul</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Kemiripan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#agak-laen"><img src="gambar/Agak Laen.jpeg" alt="Agak Laen" width="60" height="80"></a></td>
+                        <td><a href="#agak-laen">Agak Laen</a></td>
+                        <td>Komedi, Horor</td>
+                        <td>&#9733; 8.2</td>
+                        <td>Sama-sama bergenre komedi</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#mortal-kombat-2"><img src="gambar/mortal_Kombat_2.jpeg" alt="Mortal Kombat II" width="60" height="80"></a></td>
+                        <td><a href="#mortal-kombat-2">Mortal Kombat II</a></td>
+                        <td>Aksi, Fantasi</td>
+                        <td>&#9733; 7.0</td>
+                        <td>Sama-sama bergenre aksi</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><a href="#daftar">&uarr; Kembali ke tabel ringkasan</a></p>
         </section>
 
-        <section>
+        <section id="ghost-in-the-cell">
             <h3>2. GHOST IN THE CELL</h3>
 
             <p>
@@ -64,20 +168,52 @@
             </p>
 
             <img src="gambar/Ghost in the Cell.jpeg" alt="Ghost In The Cell" width="200" height="270">
-        
+
             <p>
                 <video src="video/gosh.mp4" width="620" height="360" controls></video>
             </p>
 
-        <section>
+            <h4>Rekomendasi Film Serupa</h4>
+            <table>
+                <caption>Film yang serupa dengan Ghost In The Cell</caption>
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Judul</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Kemiripan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#mortal-kombat-2"><img src="gambar/mortal_Kombat_2.jpeg" alt="Mortal Kombat II" width="60" height="80"></a></td>
+                        <td><a href="#mortal-kombat-2">Mortal Kombat II</a></td>
+                        <td>Aksi, Fantasi</td>
+                        <td>&#9733; 7.0</td>
+                        <td>Sama-sama bergenre aksi</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#pesta-copet"><img src="gambar/copet.jpg" alt="Pesta Copet" width="60" height="80"></a></td>
+                        <td><a href="#pesta-copet">Pesta Copet</a></td>
+                        <td>Komedi, Aksi</td>
+                        <td>&#9733; 7.5</td>
+                        <td>Sama-sama bergenre aksi</td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <p><a href="#daftar">&uarr; Kembali ke tabel ringkasan</a></p>
+        </section>
+
+        <section id="agak-laen">
             <h3>3. Agak Laen</h3>
 
             <p>
                 Film komedi horor ini mengisahkan Bene, Boris, Oki, 
                 dan Jegel yang mengelola rumah hantu di sebuah pasar malam, 
                 tapi selalu gagal menarik pengunjung karena rumah hantunya 
-                kurang seram — sampai suatu hari mereka merenovasinya agar 
+                kurang seram sampai suatu hari mereka merenovasinya agar 
                 lebih menegangkan. Setelah itu, muncul kejadian tak terduga 
                 yang bikin rumah hantu mereka jadi viral, dan berbagai masalah pun bermunculan
             </p>
@@ -86,16 +222,49 @@
                 <b>Harga Tiket: Rp. 35.000,00</b>
             </p>
 
-            <img src="gambar/Agak Laen.jpeg" alt="Agak Lain" width="200" height="270">
+            <img src="gambar/Agak Laen.jpeg" alt="Agak Laen" width="200" height="270">
 
             <p>
                 <video width="640" height="360" controls>
-                <source  src="video/Agak_Lain.mp4" type="video/mp4">
-                Browser Anda tidak mendukung tag video.
+                    <source src="video/Agak_Lain.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
             </p>
+
+            <h4>Rekomendasi Film Serupa</h4>
+            <table>
+                <caption>Film yang serupa dengan Agak Laen</caption>
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Judul</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Kemiripan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#pesta-copet"><img src="gambar/copet.jpg" alt="Pesta Copet" width="60" height="80"></a></td>
+                        <td><a href="#pesta-copet">Pesta Copet</a></td>
+                        <td>Komedi, Aksi</td>
+                        <td>&#9733; 7.5</td>
+                        <td>Sama-sama bergenre komedi</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#sampai-titik-terakhir"><img src="gambar/sampai_titik_terakhir.jpeg" alt="Sampai Titik Terakhir" width="60" height="80"></a></td>
+                        <td><a href="#sampai-titik-terakhir">Sampai Titik Terakhir</a></td>
+                        <td>Drama, Romantis</td>
+                        <td>&#9733; 7.8</td>
+                        <td>Sama-sama film Indonesia</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><a href="#daftar">&uarr; Kembali ke tabel ringkasan</a></p>
         </section>
 
-        <section>
+        <section id="sampai-titik-terakhir">
             <h3>4. Sampai Titik Terakhir</h3>
 
             <p>
@@ -115,15 +284,40 @@
                 <b>Harga Tiket: Rp. 40.000</b>
             </p>
 
-                <img src="gambar/sampai_titik_terakhir.jpeg" alt="Sampai Titik Terakhir" width="200" height="270"> 
+            <img src="gambar/sampai_titik_terakhir.jpeg" alt="Sampai Titik Terakhir" width="200" height="270">
 
             <p>
                 <video src="video/sampai.mp4" width="640" height="360" controls></video>
             </p>
+
+            <h4>Rekomendasi Film Serupa</h4>
+            <table>
+                <caption>Film yang serupa dengan Sampai Titik Terakhir</caption>
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Judul</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Kemiripan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#agak-laen"><img src="gambar/Agak Laen.jpeg" alt="Agak Laen" width="60" height="80"></a></td>
+                        <td><a href="#agak-laen">Agak Laen</a></td>
+                        <td>Komedi, Horor</td>
+                        <td>&#9733; 8.2</td>
+                        <td>Sama-sama film Indonesia</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><a href="#daftar">&uarr; Kembali ke tabel ringkasan</a></p>
         </section>
 
-        <section>
-            <h3>5. Mprtal kombat II</h3>
+        <section id="mortal-kombat-2">
+            <h3>5. Mortal Kombat II</h3>
 
             <p>
                 sekuel film aksi fantasi laga (2026) garapan Simon McQuoid, melanjutkan 
@@ -144,8 +338,39 @@
 
             <p>
                 <video src="video/mortal.mp4" height="360" width="640" controls></video>
-
             </p>
+
+            <h4>Rekomendasi Film Serupa</h4>
+            <table>
+                <caption>Film yang serupa dengan Mortal Kombat II</caption>
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Judul</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Kemiripan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#ghost-in-the-cell"><img src="gambar/Ghost in the Cell.jpeg" alt="Ghost In The Cell" width="60" height="80"></a></td>
+                        <td><a href="#ghost-in-the-cell">Ghost In The Cell</a></td>
+                        <td>Fiksi Ilmiah, Aksi</td>
+                        <td>&#9733; 8.0</td>
+                        <td>Sama-sama bergenre aksi</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#pesta-copet"><img src="gambar/copet.jpg" alt="Pesta Copet" width="60" height="80"></a></td>
+                        <td><a href="#pesta-copet">Pesta Copet</a></td>
+                        <td>Komedi, Aksi</td>
+                        <td>&#9733; 7.5</td>
+                        <td>Sama-sama bergenre aksi</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><a href="#daftar">&uarr; Kembali ke tabel ringkasan</a></p>
         </section>
 
         <hr>
@@ -155,7 +380,7 @@
         <ul>
             <li>Film Pilihan jalangkung</li>
             <li>Film Pilihan Agak lain 2</li>
-            <li>Film Pilihan Spider-Man</li>
+            <li>Film Pilihan Speeder-man</li>
         </ul>
 
     </main>
