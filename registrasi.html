@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi Pelanggan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Daftar Film Terkenal</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="film.html">Daftar Film</a>
+            <a href="paket.html">Paket</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="registrasi.html" class="nav-kanan">Registrasi</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Registrasi Pelanggan</h2>
+
+        <p>
+            Silakan isi formulir di bawah ini untuk mendaftar sebagai pelanggan.
+        </p>
+
+        <form class="form-registrasi" action="#" method="post">
+
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="paket">Pilih Paket</label>
+                <select id="paket" name="paket" required>
+                    <option value="">-- Pilih salah satu --</option>
+                    <option value="basic">Basic - Rp 25.000/bulan</option>
+                    <option value="standar">Standar - Rp 45.000/bulan</option>
+                    <option value="premium">Premium - Rp 75.000/bulan</option>
+                </select>
+            </div>
+
+            <fieldset class="metode-bayar">
+                <legend>Metode Pembayaran</legend>
+
+                <div class="opsi-bayar">
+                    <input type="radio" id="bayar-kartu" name="metode_bayar" value="kartu" checked>
+                    <label for="bayar-kartu">
+                        <span class="logo-kartu">
+                            <svg viewBox="0 0 48 30" width="40" height="26" aria-hidden="true">
+                                <rect x="1" y="1" width="46" height="28" rx="4" fill="#1a4fa0"/>
+                                <text x="24" y="19" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-style="italic" font-size="11" fill="#ffffff">VISA</text>
+                            </svg>
+                            <svg viewBox="0 0 48 30" width="40" height="26" aria-hidden="true">
+                                <rect x="1" y="1" width="46" height="28" rx="4" fill="#f5f5f5" stroke="#ccc"/>
+                                <circle cx="20" cy="15" r="9" fill="#eb001b"/>
+                                <circle cx="29" cy="15" r="9" fill="#f79e1b" fill-opacity="0.85"/>
+                            </svg>
+                        </span>
+                        Kartu Debit/Kredit
+                    </label>
+                </div>
+
+                <div class="input-kartu" id="input-kartu">
+                    <label for="no-kartu">Nomor Kartu</label>
+                    <input type="text" id="no-kartu" name="no_kartu" placeholder="0000 0000 0000 0000" maxlength="19">
+                </div>
+
+                <div class="opsi-bayar">
+                    <input type="radio" id="bayar-ewallet" name="metode_bayar" value="ewallet">
+                    <label for="bayar-ewallet">
+                        <span class="logo-kartu">
+                            <svg viewBox="0 0 30 30" width="26" height="26" aria-hidden="true">
+                                <rect x="2" y="4" width="26" height="22" rx="4" fill="#2e8b57"/>
+                                <circle cx="22" cy="15" r="3" fill="#ffffff"/>
+                            </svg>
+                        </span>
+                        Dompet Digital
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <button type="submit">Daftar Sekarang</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Website Film Terkenal &copy; 2026</p>
+    </footer>
+
+    <script>
+        var radioKartu = document.getElementById('bayar-kartu');
+        var radioEwallet = document.getElementById('bayar-ewallet');
+        var inputKartuWrap = document.getElementById('input-kartu');
+        var noKartu = document.getElementById('no-kartu');
+
+        function updateMetodeBayar() {
+            if (radioKartu.checked) {
+                inputKartuWrap.style.display = 'block';
+                noKartu.required = true;
+            } else {
+                inputKartuWrap.style.display = 'none';
+                noKartu.required = false;
+            }
+        }
+
+        radioKartu.addEventListener('change', updateMetodeBayar);
+        radioEwallet.addEventListener('change', updateMetodeBayar);
+        updateMetodeBayar();
+    </script>
+
+</body>
+</html>
